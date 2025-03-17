@@ -1,0 +1,37 @@
+body{
+  margin: 0;
+}
+
+.page{
+  background-color: #232323;
+  color: #ddd;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.header{
+  margin-bottom: 2rem;
+
+  ul{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+  }
+  a{
+    color: #d28fff;
+
+  }
+}
+
+.main{
+  border: 1px solid #f1f1f1;
+  border-radius: 0.5rem;
+  display: grid;
+  padding: 2rem;
+  
+  ul{
+    margin-bottom: .25rem;
+  }
+}
