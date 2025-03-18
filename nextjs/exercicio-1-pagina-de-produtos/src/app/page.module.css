@@ -1,0 +1,73 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.main h1{
+  padding-bottom: 10px;
+  font-size: 40px;
+  
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: center;
+  margin: 30px;
+  align-items: center;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  
+}
+
+.btnComprar{
+  width: 100px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #8088ff;
+  border-radius: 15px;
+  color: #8088ff;
+  margin: 10px;
+}
+.btnSaibaMais{
+  width: 100px;
+  height: 35px;
+  background-color: #8088ff;
+  border: 1px solid #8088ff;
+  border-radius: 15px;
+  color: white;
+  margin: 10px;
+}
+.card p{
+  display: flex;
+  text-align: center;
+}
