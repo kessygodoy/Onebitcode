@@ -1,0 +1,22 @@
+
+.post{
+
+  display: flex;
+  flex-direction: column;
+  /* max-width: 900px; */
+  width: 100%;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.postContent{
+  display: flex;
+  flex-direction: column;
+  width: 600;
+  text-align: justify;
+  align-items: center;
+}
+
+.postContent h2{
+  margin: 30px;
+}
