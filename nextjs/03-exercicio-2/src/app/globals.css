@@ -67,3 +67,10 @@ h2 {
   margin-bottom: 2rem;
   text-align: justify;
 }
+
+.site-logo {
+  display: block;
+  font-family: var(--font-playfair-display);
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}

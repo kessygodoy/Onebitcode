@@ -27,6 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${playfairDisplayFont.variable} ${interFont.variable}`}>
+        <header>
+          <div className="site-logo">Universo em foco</div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque omnis optio ipsam ratione numquam!</p>
+        </header>
         {children}
       </body>
     </html>
