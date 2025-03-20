@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local"
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,8 +29,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplayFont.variable} ${interFont.variable}`}>
         <header>
-          <div className="site-logo">Universo em foco</div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque omnis optio ipsam ratione numquam!</p>
+          <div className="site-logo">
+            <h2>Universo em foco</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora atque omnis optio ipsam ratione numquam!</p>
+          </div>
+          <nav>
+            <Link href="/">Início</Link>
+            {" | "}
+            <Link href="/blog">Blog</Link>
+            {" | "}
+            <Link href="/loja">Loja</Link>
+          </nav>
         </header>
         {children}
       </body>

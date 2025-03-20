@@ -71,6 +71,14 @@ h2 {
 .site-logo {
   display: block;
   font-family: var(--font-playfair-display);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: .5rem;
+}
+
+header{
+  border-bottom: 1px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
 }
