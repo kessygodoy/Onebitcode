@@ -15,7 +15,7 @@ const products = [
   {
     id: 2,
     image: "https://www.apple.com/v/mac/home/ca/images/overview/select/product_tile_mba_13_15__fx2g3qlubdym_large.png",
-    alt: "MacBook Air",
+    alt: "MacBook Pro",
     title: "MacBook Air",
     subtitle: "Mais poder, menos peso",
     description: "O MacBook Air é a versão mais leve do MacBook.",
