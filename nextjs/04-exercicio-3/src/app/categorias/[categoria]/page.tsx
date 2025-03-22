@@ -13,7 +13,7 @@ export default function Page() {
     const categoriaFormatada = categoria.replace("_", " ");
     const categorySpaceships = spaceships.filter((spaceship) => spaceship.category === categoriaFormatada);
     return (
-        <div>
+        <div className={Styles.container}>
             <h1>{categoria}</h1>
             <div className={Styles.buttons}>
 

@@ -6,7 +6,7 @@ export default function Page() {
     const categoriesSet = new Set(spaceships.map((spaceship) => spaceship.category))
     const categories = Array.from(categoriesSet)
     return (
-        <main>
+        <main className={Styles.container}>
 
             <h1>Categorias</h1>
             <div className={Styles.buttons}>
