@@ -2,16 +2,6 @@
 import Spaceship from "@/components/Spaceship";
 import spaceships from "../../../../spaceships.json"
 import { useParams } from "next/navigation";
-// import styles from "./page/page.module.css"
-
-interface spaceshipProps{
-    id: number,
-    name: string,
-    model: string,
-    category: string,
-    description: string,
-    imageUrl: string
-}
 
 export default function Page() {
     const params = useParams()
