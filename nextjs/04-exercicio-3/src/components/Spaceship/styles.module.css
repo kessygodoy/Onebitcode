@@ -1,0 +1,25 @@
+.image{
+    max-height: 500px;
+    margin: auto;
+    max-width: 1024px;
+}
+
+.spaceship{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 1024px;
+    margin: auto;
+    height: calc(100vh - 66px);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons div{
+    display: flex;
+    gap: 1rem;
+}
