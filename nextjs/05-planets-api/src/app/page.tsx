@@ -1,12 +1,11 @@
 // import { PlanetsManager } from '@/components/PlanetsManager';
 import styles from './page.module.css';
 import { PlanetForm } from '@/components/PlanetForm';
-import { Planet, PlanetItem } from '@/components/PlanetItem';
+import { PlanetItem } from '@/components/PlanetItem';
+import * as Planet from '@/models/Planet';
 
 export default async function Page() {
-  const response = await fetch("http://localhost:3000/api/planets")
-  const data: Planet[] = await response.json()
-
+const planets = await Planet.getPlanets()
 
   return (
     <div className={styles.page}>
@@ -16,7 +15,7 @@ export default async function Page() {
       <PlanetForm />
 
       <section className={styles.planets}>
-        {data.map((planet) => (
+        {planets.map((planet) => (
           <PlanetItem key={planet.id} planet={planet} />
         ))}
       </section>

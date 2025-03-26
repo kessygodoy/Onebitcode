@@ -1,27 +1,23 @@
 'use server'
 
 import { revalidatePath } from "next/cache";
+import * as Planet from '@/models/Planet';
 
 export async function createPlanetAction(formData: FormData) {
     const name = formData.get('name');
     const description = formData.get('description');
     const imageUrl = formData.get('imageUrl');
 
-    await fetch(`http://localhost:3000/api/planets`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, description, imageUrl }),
-    });
+    if (typeof name !== 'string' || typeof description !== 'string' || typeof imageUrl !== 'string') {
+        throw new Error('Invalid data');
+    }
 
+    await Planet.createPlanet({name, description, imageUrl});
     revalidatePath("/")
   }
 
   export async function deletePlanetAction(id: number) {
-    await fetch(`http://localhost:3000/api/planets`, {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id })
-      });
+      await Planet.deletePlanet(id);
 
       revalidatePath("/")
 }

@@ -2,13 +2,8 @@
 
 import { deletePlanetAction } from '@/actions/planets-actions';
 import styles from './styles.module.css';
+import { Planet } from '@/models/Planet';
 
-export interface Planet {
-  id: number
-  name: string
-  description: string
-  imageUrl: string
-}
 
 export interface PlanetItemsProps {
   planet: Planet

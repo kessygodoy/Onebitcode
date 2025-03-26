@@ -179,6 +179,7 @@ a.secondary {
   display: flex;
   flex: 1;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap
+  ;
 }
 
